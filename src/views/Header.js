@@ -13,9 +13,13 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import FamilyRestroomIcon from '@mui/icons-material/FamilyRestroom';
+import { useMediaQuery } from '@mui/material';
+import { useEffect } from 'react';
+
 const pages = ['Trang chủ', 'Câu chuyện', 'Thiệp mời', 'Chỉ dẫn', 'Gửi gắm yêu thương'];
 
 function ResponsiveAppBar() {
+
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -28,9 +32,9 @@ function ResponsiveAppBar() {
 
   return (
     <AppBar position="fixed">
-      <Container maxWidth="xl" alignItems="center">
+      <Container maxWidth="xl">
         <Toolbar disableGutters sx={{alignItems: "center", justifyContent: "center"}}>
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none', lg: 'none', justifyContent: 'center' }}}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -88,7 +92,7 @@ function ResponsiveAppBar() {
           >
             Our wedding
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: 'center'} }}>
             {pages.map((page) => (
               <Button
                 key={page}

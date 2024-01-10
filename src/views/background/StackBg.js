@@ -12,14 +12,14 @@ const Item = styled(Paper)(({theme}) => ({
     textAlign: 'center',
     color: theme.palette.text.secondary,
 }));
-const items = [...Array(50).keys()]
+const items = [...Array(10).keys()]
 const imgz = 'https://cdn.biihappy.com/ziiweb/default/template/62ef3cdcf106ea77bb276cc5/6bf9779158d43707a8d1d400c2da1e3d.jpg'
 export default function BasicStack() {
     return (
         <Box sx={{width: '100%'}}>
             <Stack spacing={2}>
                 <Header></Header>
-                {items.map(item => <Item>Item 1 {item}</Item>)}
+                {items.map(item => <Item key={item}>Item 1 {item}</Item>)}
                 <Item>
                     <img src={imgz} alt="Girl in a jacket"/>
                 </Item>
