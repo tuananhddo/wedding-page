@@ -24,14 +24,19 @@ export default function Home() {
                 <Grid container justifyContent="center" spacing={spacing}>
                     {[0, 1, 2].map((value) => (
                         <Grid key={value} item>
-                            <Paper
-                                sx={{
-                                    height: 462,
-                                    width: 320,
-                                    backgroundColor: (theme) =>
-                                        theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-                                }}
+                            {/*<Paper*/}
+                            {/*    sx={{*/}
+                            {/*        height: 462,*/}
+                            {/*        width: 320,*/}
+                            {/*        backgroundColor: (theme) =>*/}
+                            {/*            theme.palette.mode === 'dark' ? '#1A2027' : '#fff',*/}
+                            {/*    }}*/}
+                            {/*/>*/}
+                            <img src={'https://thunghiemtest.my.canva.site/images/95a69c0f9855397797cbaddcd183bc46.jpg'}
+                                 style={{backgroundColor: '#caebd3'}}
+                                 height={462} width={320}
                             />
+
                         </Grid>
                     ))}
                 </Grid>
