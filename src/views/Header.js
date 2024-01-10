@@ -16,7 +16,7 @@ import FamilyRestroomIcon from '@mui/icons-material/FamilyRestroom';
 import { useMediaQuery } from '@mui/material';
 import { useEffect } from 'react';
 
-const pages = ['Trang chủ', 'Câu chuyện', 'Thiệp mời', 'Chỉ dẫn', 'Gửi gắm yêu thương'];
+const pages = ['Trang chủ', 'Câu chuyện', 'Thiệp mời', 'Chỉ dẫn', 'Trao gửi yêu thương'];
 
 function ResponsiveAppBar() {
 
@@ -31,7 +31,7 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="fixed">
+    <AppBar position="sticky" sx={{background: 'transparent'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters sx={{alignItems: "center", justifyContent: "center"}}>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none', lg: 'none', justifyContent: 'center' }}}>
@@ -97,7 +97,7 @@ function ResponsiveAppBar() {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, color: 'black', display: 'block', fontWeight: "bold" }}
               >
                 {page}
               </Button>
