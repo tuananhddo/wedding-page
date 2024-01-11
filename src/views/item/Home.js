@@ -42,29 +42,42 @@ export default function Home() {
                 <div style={{ position: 'relative' }} >
                     <CardMedia
                         component="img"
-                        image="https://static.wixstatic.com/media/e1c78c_38c6098a3adb4746a3f7b2005fe1fc0f.jpg/v1/fill/w_640,h_872,al_r,q_85,usm_0.66_1.00_0.01,enc_auto/e1c78c_38c6098a3adb4746a3f7b2005fe1fc0f.jpg"
+                        image="https://cdn.biihappy.com/ziiweb/default/template/62ef3cdcf106ea77bb276cc5/6bf9779158d43707a8d1d400c2da1e3d.jpg"
+                        sx={{opacity: 0.8}}
                     />
-                    <Typography sx={{
+                    <Typography
+                        noWrap
+                        variant="body1"
+                        align='center'
+                        sx={{
+                        fontFamily: 'Arial, Helvetica, sans-serif',
                         position: 'absolute',
                         color: 'black',
-                        bottom: 50,
+                        bottom: {xs: 120, md: 200, lg: 200},
                         left: '50%',
                         transform: 'translateX(-50%)',
-                        fontSize: {xs: '10px', md: '60px', lg: '400x'},
-                        fontWeight: {xs: '100', md: '600', lg: '800'}
+
+                        fontSize: {xs: '20px', md: '60px', lg: '120px'},
+                        fontWeight: {xs: '600', md: '600', lg: '800'},
+
 
                     }} >
-                        ANNA & ANCD
+                        Mrs ANNA & Mr BRIAN
                         </Typography>
-                    <Typography style={{
+                    <Typography
+                        noWrap
+                        sx={{
+                        fontFamily: 'Arial, Helvetica, sans-serif',
                         position: 'absolute',
                         color: 'black',
-                        bottom: 10,
+                        bottom: {xs: 90, md: 200, lg: 160},
                         left: '50%',
                         transform: 'translateX(-50%)',
-                        fontSize: {xs: '10px', md: '40px', lg: '200x'},
-                        fontWeight: {xs: '100', md: '400', lg: '600'}
-                    }} >19:00</Typography>
+                        fontSize: {xs: '20px', md: '40px', lg: '200x'},
+                        fontWeight: {xs: '400', md: '600', lg: '600'}
+                    }} >
+                        19:00 ngày 18 tháng 5 năm 2023
+                    </Typography>
                 </div>
             {/* </CardContent> */}
         </Card>

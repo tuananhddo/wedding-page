@@ -17,22 +17,22 @@ const items = [...Array(10).keys()]
 const imgz = 'https://cdn.biihappy.com/ziiweb/default/template/62ef3cdcf106ea77bb276cc5/6bf9779158d43707a8d1d400c2da1e3d.jpg'
 export default function BasicStack() {
     return (
-        <Box sx={{width: '100%', backgroundColor: '#caebd3'}}>
-            <Stack spacing={1}>
+        <Box sx={{width: '100%', backgroundColor: 'white'}}>
+            <Stack spacing={0}>
                 <Header></Header>
                 {/*{items.map(item => <Item key={item}>Item 1 {item}</Item>)}*/}
                 {/*<Box sx={{width: '100%'}}>*/}
                 {/*    <Item style={{marginTop: 80}}></Item>*/}
                 <Home></Home>
-                <Item>
+                <Item sx={{borderRadius: 0}}>
                     <img src={imgz} style={{
                         width: '100%', backgroundColor: '#caebd3', opacity: '0.75'
                     }}/>
                 </Item>
-                <Item>
+                <Item sx={{borderRadius: 0}}>
                     <img src={imgz} style={{width: '100%', backgroundColor: '#caebd3'}}/>
                 </Item>
-                <Item>
+                <Item sx={{borderRadius: 0}}>
                     <img src={imgz} style={{width: '100%', backgroundColor: '#caebd3'}}/>
                 </Item> {/*</Box>*/}
 

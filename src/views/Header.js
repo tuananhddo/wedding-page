@@ -67,7 +67,7 @@ function ResponsiveAppBar() {
                 sx={{display: 'contents'}}
             >
               {pages.map((page) => (
-                <MenuItem textAlign="center" key={page} onClick={handleCloseNavMenu}>
+                <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center" sx={{ flexGrow: 1, textAlign: "center", alignItems: "center", display: 'flex', justifyContent: "center" }}>{page}</Typography>
                 </MenuItem>
               ))}
@@ -86,7 +86,7 @@ function ResponsiveAppBar() {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
+              color: 'black',
               textDecoration: 'none',
             }}
           >
